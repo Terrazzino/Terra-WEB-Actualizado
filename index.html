@@ -33,8 +33,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <!-- ################################################ -->
 
+  <link rel="icon" href="./assets/img/icono.png">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="./style/style.css">
 
 
@@ -42,31 +44,43 @@
 </head>
 
 <body class="row">
+  <!-- ##############       Animacion de Inicio               ################### -->
+  <div class="presentacion-div col-12">
+    <div class="contenedor-bienvenida">
+      <h2 class="bienvenida-texto bienvenida">Bienvenido seas a...</h2>
+      <h2 class="bienvenida-nombre terra">TERRA</h2>
+      <!-- <audio src="./assets/IntroWeb.mp3" autoplay></audio> -->
+    </div>
+  </div>
+  <!-- ################################################################################ -->
+
+
+
+
   <header class="col-12">
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="./assets/img/carrousel/banerBW.png" class="d-block" alt="...">
+          <img src="./assets/img/carrousel/banerBW.png" class="d-block" alt="escenario y equipos">
           <div class="carousel-caption  d-block p-0 m-0">
             <h3 class="text-white mx-auto my-auto">¿QUIENES SOMOS?</h3>
             <p class="text-white p-banner"><kbd>Amigos, una familia construyendo canciones</kbd></p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="./assets/img/carrousel/banda en garcia baner.jpg" class="d-block" alt="...">
+          <img src="./assets/img/carrousel/banda en garcia baner.jpg" class="d-block" alt="banda puerta garcia">
           <div class="carousel-caption  d-block p-0 m-0">
             <h3 class="text-white mx-auto my-auto">¿QUE HACEMOS?</h3>
             <p class="text-white p-banner"><kbd>Música fuera de casillas</kbd></p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./assets/img/carrousel/banda tocando baner.jpg" class="d-block" alt="...">
+          <img src="./assets/img/carrousel/banda tocando baner.jpg" class="d-block" alt="banda tocando garcia">
           <div class="carousel-caption  d-block p-0 m-0">
             <h3 class="text-white mx-auto my-auto">¿DONDE VAMOS?</h3>
             <p class="text-white p-banner"><kbd>Nuestro viaje siempre es a la luna y vos estas invitado</kbd></p>
@@ -83,25 +97,45 @@
       </button>
     </div>
   </header>
-  <nav class="row navbar bg-dark nav nav-pills nav-fill col-12" >
-    <img src="./assets/img/logo.png" class="logo pb-3 col-xl-1 col-lg-12 mx-auto" width="200" height="auto">
-    <div class="row col-xl-11 col-lg-12">
+
+
+<!-- ################### MENU PRINCIPAL ########################### -->
+
+  <nav class="row navbar bg-dark nav nav-pills nav-fill col-12 menu-oficial">
+    <img src="./assets/img/logo.png" class="logo pb-3 col-xl-1 col-lg-12 mx-auto" width="200" height="auto" alt="logo-terra">
+    <div class="row col-xl-11 col-lg-12 mx-auto">
       <a class="text-center nav-link col-sm-3 col-12" aria-current="page" href="index.html">HOME</a>
-      <a class="text-center nav-link col-sm-3 col-12" aria-current="page" href="./html/albumes.html#seccion-album">ALBUMES</a>
+      <a class="text-center nav-link col-sm-3 col-12" aria-current="page"
+        href="./html/albumes.html#seccion-album">ALBUMES</a>
       <a class="text-center nav-link col-sm-3 col-12" href="./html/galeria.html#seccion-galeria">GALERIA</a>
       <a class="text-center nav-link col-sm-3 col-12" href="./html/contactos.html#seccion-contactos">CONTACTOS</a>
     </div>
   </nav>
-  <!-- ##############       Animacion de Inicio               ################### -->
-  <div class="presentacion-div col-12">
-    <div class="contenedor-bienvenida">
-      <h2 class="bienvenida-texto bienvenida">Bienvenido seas a...</h2>
-      <h2 class="bienvenida-nombre terra">TERRA</h2>
-      <audio src="./assets/IntroWeb.mp3" autoplay></audio>
-    </div>
+
+
+<!-- #################### MENU RESPONSIVE ############################## -->
+<nav class="bg-dark menu-secundario col-12">
+  <img src="./assets/img/logo.png" class="logo pb-3 col-xl-1 col-lg-12" width="200" height="auto" alt="logo terra">
+  <div class="nav-item dropdown mx-auto">
+    <a class="menu-barras nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="./assets/img/imagenes/iconos/menu.png" alt="menu hamburguesa" width="50px" height="auto">
+    </a>
+    <ul class="submenu dropdown-menu bg-secondary mx-auto" aria-labelledby="navbarDropdown">
+      <li><a class="nav-link text-center" href="index.html">HOME</a></li>
+      <li><a class="nav-link text-center" href="./html/albumes.html#seccion-album">ALBUMES</a></li>
+      <li><a class="nav-link text-center" href="./html/galeria.html#seccion-galeria">GALERIA</a></li>
+      <li><a class="nav-link text-center" href="./html/contactos.html#seccion-contactos">CONTACTOS</a></li>
+    </ul>
   </div>
-  <!-- ################################################################################ -->
+</nav>
+<!-- ############################################################### -->
+
+
   <h1 class="text-center col-12">TERRA | Historias y Canciones</h1>
+
+
+
+
   <div class="row col-12">
     <div class="col-lg-8 col-md-12">
       <section>
@@ -267,12 +301,17 @@
                 donde no encontraremos canciones de Rock, ni Pop, ni Hevy, ni ninguna categoria musical,
                 y
                 solo reinara
-                la <b>MÚSICA</b></p>
+                la <b>MÚSICA</b>
+              </p>
             </div>
           </div>
         </article>
       </section>
     </div>
+
+
+
+
     <aside class="col-lg-4 col-md-12 mx-auto px-5">
       <div class="fondo-card card mt-5 shadow-lg">
         <div class="card-header bg-black">
@@ -283,13 +322,19 @@
             <p>Recital en Floyd 14 de Julio con filmacion del concierto</p>
             <p>Lanzamiento Partes Iguales (con videoclip)</p>
             <p>Lanzamiento nuevas canciones ya cocinadas</p>
-            <footer class="blockquote-footer mt-2"><cite title="Source Title">Las fechas aun no definidas se iran
-                comunicando con el pasar de los dias al menos con una semana de anticipacion</cite></footer>
+            <footer class="blockquote-footer mt-2">
+              <cite title="Source Title">Las fechas aun no definidas se iran comunicando con el pasar de los dias al
+                menos con una semana de anticipacion</cite>
+            </footer>
           </blockquote>
         </div>
       </div>
     </aside>
   </div>
+
+
+
+
   <footer class="border container-fluid d-flex flex-col justify-content-evenly p-2 bg-black col-12">
     <a href="https://instagram.com/terra_okey?igshid=YmMyMTA2M2Y=" target="_blank"><img width="50" height="auto"
         src="./assets/img/imagenes/redes-sociales/instagram.png" alt="Logo-Instagram"></a>
@@ -307,7 +352,9 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

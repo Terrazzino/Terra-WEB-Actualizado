@@ -1,3 +1,5 @@
+/*######################################################################################## ANIMACION DE BIENVENIDA*/
+
 body{
     position: relative;
 }
@@ -88,6 +90,10 @@ body{
     }
 }
 
+/*########################################################################################*/
+
+/*######################################################################################## TRANCISION ENTRE PAGINAS*/
+
 .transicion{
     position: fixed;
     top: 0;
@@ -117,24 +123,40 @@ body{
         width: 0vw;
     }
 }
+
+/*########################################################################################*/
+
+/*######################################################################################## Bannner*/
+
 h3{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
     font-size: 10em;
 }
+
+kbd{
+    background-color: #272727;
+}
+
 .carousel-item p{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 1.5em;
 }
 
-.logo{
-    width: 150px;
-    height: auto;
-}
 .carousel-inner img{
     width: 100vw;
     height: auto;
 }
+
+/*########################################################################################*/
+
+/*######################################################################################## NAV*/
+
+.logo{
+    width: 150px;
+    height: auto;
+}
+
 nav{
     width: 100vw;
     height: auto;
@@ -152,33 +174,83 @@ nav{
     color: #886e55;
     font-size: 2em;
 }
+
+.menu-secundario{
+    display: none;
+}
+
+
+.menu-barras{
+    width: min-content;
+}
+.menu-barras img{
+    width: min-content;
+}
+
+.submenu{
+    display: none;
+    animation-name: aparece-submenu;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+
+.submenu a{
+    animation-name: letra-aparece;
+    animation-duration: .8s;
+}
+@keyframes letra-aparece {
+    0%{
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0 0 10px #dbc02700;
+    }
+    50%{
+        color: rgba(255, 255, 255, 0);
+    }
+    70%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px #dbc027;
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px #dbc02700;
+    }
+}
+/*########################################################################################*/
+
+/*######################################################################################## H1*/
+
 h1{
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: bold;
     margin-top: 0.5em;
+    padding: 5px;
     font-size: 3em;
 }
-kbd{
-    background-color: #272727;
-}
+
+/*########################################################################################*/
+
+/*######################################################################################## EDICIONES GENERALES*/
+
 section h5, aside h4, aside footer{
     font-family: 'Special Elite', cursive;
 }
 section p{
     font-family: 'Poiret One', cursive;
 }
-label{
-    font-family: 'Poiret One', cursive;
-    color: #000000;
-    font-weight: bold;
-}
-input, textarea{
-    font-family: 'Special Elite', cursive;
-}
+
+
+/*########################################################################################*/
+
+/*######################################################################################## Aside*/
+
 aside p{
     font-family: 'Poiret One', cursive;
     color: #000000;
 }
+/*########################################################################################*/
+
+/*######################################################################################## Footer*/
 
 footer a img{
     opacity: 0.18;
@@ -202,6 +274,18 @@ footer a img:hover{
     box-shadow: 0 0 15px #914600;
 }
 
+/*########################################################################################*/
+
+/*######################################################################################## Contactos*/
+
+label{
+    font-family: 'Poiret One', cursive;
+    color: #000000;
+    font-weight: bold;
+}
+input, textarea{
+    font-family: 'Special Elite', cursive;
+}
 legend{
     font-family: 'Damion', cursive;
     font-size: 2.5em;
@@ -216,11 +300,20 @@ button:hover{
     box-shadow: 4px 2px 5px #000000;
 }
 
+/*########################################################################################*/
+
+/* ######################################################################################## BARRA DE NAVEGACION SOBRE ALBUMES Y SINGLES */
+
 .btn-group a{
     font-family: 'Damion', cursive;
     font-size: 1.5em;
     border: none;
 }
+
+/*########################################################################################*/
+
+/* ######################################################################################## De aca a la Luna EP */
+
 .ep-style h5{
     font-family: 'Damion', cursive;
     font-size:2em;
@@ -230,26 +323,10 @@ button:hover{
     font-size: 1.3em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*########################################################################################*/
 
 /* ######################################################################################## GALERIA */
+
 .animation-img{
     filter: blur(2px) grayscale(50%);
     transition:.8s
@@ -417,11 +494,16 @@ button:hover{
     grid-row: 12/14;
 }
 
+/*########################################################################################*/
 
+/*######################################################################################## RESPONSIVE DESIGN*/
 
 @media only screen and (max-width:445px){
     h3{
-        font-size: 2em;
+        font-size: 1.5em;
+    }
+    kbd{
+        font-size: 0.5em;
     }
     .carousel-item p{
         font-size: 0.8em;
@@ -432,6 +514,38 @@ button:hover{
     .contenedor-bienvenida .terra{
         font-size: 4em;
     }
+
+    .logo{
+        width: 120px;
+        height: auto;
+    }
+    .nav-link{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: #fff;
+        font-size: 1em;
+        padding: 0;
+        margin: 0;
+        transition: .7s;
+    }
+
+    .menu-oficial{
+        display: none;
+    }
+    .menu-secundario{
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    @keyframes aparece-submenu {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 7em;
+        }
+    }
+
     .grid-galeria {
         margin: 1em;
         display: flex;
@@ -450,6 +564,13 @@ button:hover{
         width: 200px;
         height: 200px;
     }
+    .carousel-indicators{
+        display: none;
+    }
+    .carousel-caption{
+        position: absolute;
+        top: 0.9em;
+    }
 }
 @media only screen and (min-width:445px) and (max-width:600px){
     h3{
@@ -463,6 +584,23 @@ button:hover{
     }
     .contenedor-bienvenida .terra{
         font-size: 6em;
+    }
+    .menu-oficial{
+        display: none;
+    }
+    .menu-secundario{
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    @keyframes aparece-submenu {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 11em;
+        }
     }
     .grid-galeria {
         width: 100vw;
@@ -483,6 +621,9 @@ button:hover{
         width: 300px;
         height: 315px;
     }
+    .carousel-indicators{
+        display: none;
+    }
 }
 @media only screen and (min-width:600px) and (max-width:845px){
     h3{
@@ -490,6 +631,23 @@ button:hover{
     }
     .carousel-item p{
         font-size: 0.8em;
+    }
+    .menu-oficial{
+        display: none;
+    }
+    .menu-secundario{
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    @keyframes aparece-submenu {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 11em;
+        }
     }
     .grid-galeria {
         width: 100vw;
@@ -512,6 +670,9 @@ button:hover{
     iframe{
         width: 360px;
         height: 315px;
+    }
+    .carousel-indicators{
+        display: none;
     }
 }
 @media only screen and (min-width:845px) and (max-width:1165px) {
