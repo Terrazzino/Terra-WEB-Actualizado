@@ -1,0 +1,46 @@
+#seccion-album a{
+    background-color: #000000;
+    border: none;
+    color: #fff;
+    transition:.5s;
+    font-family: 'Damion', cursive;
+    font-size: 1.5em;
+}
+#seccion-album a:hover{
+    color: rgb(199, 212, 226);
+    box-shadow: 0 0 15px #914600;
+}
+
+.btn-group a{
+    font-family: 'Damion', cursive;
+    font-size: 1.5em;
+    border: none;
+}
+.ep-style h5{
+    font-family: 'Damion', cursive;
+    font-size:2em;
+}
+.ep-style a{
+    font-family: 'Special Elite', cursive;
+    font-size: 1.3em;
+}
+
+
+@media only screen and (max-width:445px){
+    iframe{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media only screen and (min-width:445px) and (max-width:600px){
+    iframe{
+        width: 300px;
+        height: 315px;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:845px){
+    iframe{
+        width: 360px;
+        height: 315px;
+    }
+}

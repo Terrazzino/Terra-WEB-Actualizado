@@ -1,0 +1,133 @@
+
+.presentacion-div{
+    display: flex;
+    justify-content:center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: 5000;
+    animation-name: bienvenido;
+    animation-duration:4s;
+    animation-fill-mode: forwards;
+    .contenedor-bienvenida{
+        text-align: center;
+        position: relative;
+        top: 30%;
+        overflow: hidden;
+        .bienvenida-texto{
+            font-family: 'Cinzel', serif;
+            font-size:5em; 
+            color: #ffffff00;
+            animation: aparece-bienvenida;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        .bienvenida-nombre{
+            font-family: 'Cinzel', serif;
+            font-size:10em;
+            color: #ffffff00;
+            animation: aparece-nombre;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+    }
+}
+@keyframes bienvenido {
+    0%{
+        background-color: #fff;
+    }
+    60%{
+        background-color: #fff;
+    }
+    99%{
+        height: 100%;
+        width: 100vw;
+        background-color: #ffffff00;
+    }
+    100%{
+        height: 0%;
+        width: 0vw;
+    }
+}
+@keyframes aparece-bienvenida {
+    0%{
+        color: #ffffff00;
+    }
+    80%{
+        color: #818181;
+    }
+    100%{
+        color: #ffffff00;
+    }
+}
+@keyframes aparece-nombre {
+    0%{
+        color: #ffffff00;
+    }
+    50%{
+        color: #ffffff00;
+    }
+    80%{
+        color: #000000;
+    }
+    100%{
+        color: #ffffff00;
+    }
+}
+.transicion{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    z-index: 5000;
+    animation-name: transition;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transition {
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+    60%{
+        background-color: rgb(255, 255, 255);
+    }
+    99%{
+        height: 100%;
+        width: 100vw;
+        background-color: #ffffff00;
+    }
+    100%{
+        height: 0%;
+        width: 0vw;
+    }
+}
+
+
+@media only screen and (max-width:445px){
+    .presentacion-div{
+        .contenedor-bienvenida{
+            .bienvenida-texto{
+                font-size: 1.5em;
+            }
+            .bienvenida-nombre{
+                font-size: 4em;
+            }
+        }
+    }
+}
+@media only screen and (min-width:445px) and (max-width:600px){
+    .presentacion-div{
+        .contenedor-bienvenida{
+            .bienvenida-texto{
+                font-size: 3em;
+            }
+            .bienvenida-nombre{
+                font-size: 6em;
+            }
+        }
+    }
+}

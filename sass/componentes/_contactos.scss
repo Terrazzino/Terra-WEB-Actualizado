@@ -1,0 +1,22 @@
+
+label{
+    font-family: 'Poiret One', cursive;
+    color: #000000;
+    font-weight: bold;
+}
+input, textarea{
+    font-family: 'Special Elite', cursive;
+}
+legend{
+    font-family: 'Damion', cursive;
+    font-size: 2.5em;
+}
+
+button{
+    font-family: 'Special Elite', cursive;
+    color: #000000;
+    transition:.8s;
+}
+button:hover{
+    box-shadow: 4px 2px 5px #000000;
+}

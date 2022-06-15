@@ -1,0 +1,87 @@
+
+.carousel-item{
+    img{
+        width: 100%;
+        height: auto;
+    }
+    div{
+        h3{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-weight: bold;
+            font-size: 10em;
+            }
+        }
+        p{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-size: 1.5em;
+            kbd{
+                background-color: #272727;
+            }
+        }
+}
+
+
+@media only screen and (max-width:445px){
+    .carousel-item div{
+            h3{
+                font-size: 1.5em;
+                }
+            }
+            p{
+                kbd{
+                    font-size: 0.4em;
+                }
+            
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .carousel-caption{
+        position: absolute;
+        top: 0.9em;
+    }
+}
+@media only screen and (min-width:445px) and (max-width:600px){
+    .carousel-item div{
+        h3{
+            font-size: 3em;
+            }
+        }
+        p{
+            kbd{
+                font-size: 0.5em;
+            }
+        }
+    .carousel-indicators{
+        display: none;
+    }       
+}
+
+
+@media only screen and (min-width:600px) and (max-width:845px){
+    .carousel-item div{
+        h3{
+            font-size: 4.2em;
+            }
+        }
+        p{
+            kbd{
+                font-size: 0.7em;
+            }
+        }
+    .carousel-indicators{
+        display: none;
+    }
+}
+@media only screen and (min-width:845px) and (max-width:1165px) {
+    .carousel-item div{
+        h3{
+            font-size: 5.2em;
+            }
+        }
+        p{
+            kbd{
+                font-size: 0.9em;
+            }
+        }
+}

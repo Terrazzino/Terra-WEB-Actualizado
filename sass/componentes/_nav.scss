@@ -1,0 +1,146 @@
+.logo{
+    width: 150px;
+    height: auto;
+    margin: auto;
+}
+
+
+
+.menu-oficial{
+    width: 100vw;
+    height: auto;
+    div{
+        a{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            color: #fff;
+            font-size: 1.8em;
+            padding: 0;
+            margin: 0;
+            transition: .7s;
+        }
+        a:hover{
+            text-shadow: 0 0 70px #914600;
+            color: #886e55;
+            transform: scale(1.5);
+        }
+    }
+
+}
+
+
+
+.menu-secundario{
+    display: none;
+    .nav-item{
+        .menu-barras{
+            width: min-content;
+            img{
+                width: min-content;
+            }
+        }
+        .submenu{
+            animation-name: aparece-submenu;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+            li{
+                a{
+                    font-family: 'Yanone Kaffeesatz', sans-serif;
+                    animation-name: letra-aparece;
+                    animation-duration: 0.8s;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+}
+
+@keyframes letra-aparece {
+    0%{
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 0 0 10px #dbc02700;
+    }
+    50%{
+        color: rgba(255, 255, 255, 0);
+    }
+    70%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px #dbc027;
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px #dbc02700;
+    }
+}
+
+
+@media only screen and (max-width:445px){
+    .logo{
+        width: 120px;
+        height: auto;
+    }
+    .submenu li a{
+        font-size: 1.5em;
+    }
+
+    .menu-oficial{
+        display: none;
+    }
+    .menu-secundario{
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    @keyframes aparece-submenu {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 10em;
+        }
+    }
+}
+@media only screen and (min-width:445px) and (max-width:600px){
+    .menu-oficial{
+        display: none;
+    }
+    .submenu li a{
+        font-size: 1.5em;
+    }
+    .menu-secundario{
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    @keyframes aparece-submenu {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 11em;
+        }
+    }
+}
+@media only screen and (min-width:600px) and (max-width:845px){
+    .menu-oficial{
+        display: none;
+    }
+    .submenu li a{
+        font-size: 1.5em;
+    }
+    .menu-secundario{
+        display: flex;
+        flex-direction: column;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    @keyframes aparece-submenu {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 11em;
+        }
+    }
+}
