@@ -1,3 +1,4 @@
+$tipografia-carrusel:'Yanone Kaffeesatz', sans-serif;
 
 .carousel-item{
     img{
@@ -6,13 +7,13 @@
     }
     div{
         h3{
-            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-family:$tipografia-carrusel;
             font-weight: bold;
             font-size: 10em;
             }
         }
         p{
-            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-family:$tipografia-carrusel;
             font-size: 1.5em;
             kbd{
                 background-color: #272727;

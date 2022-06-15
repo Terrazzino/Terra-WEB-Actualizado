@@ -1,9 +1,12 @@
+$tipografia-album1:'Damion', cursive;
+$tipografia-album2:'Special Elite', cursive;
+
 #seccion-album a{
     background-color: #000000;
     border: none;
     color: #fff;
     transition:.5s;
-    font-family: 'Damion', cursive;
+    font-family:$tipografia-album1;
     font-size: 1.5em;
 }
 #seccion-album a:hover{
@@ -12,16 +15,16 @@
 }
 
 .btn-group a{
-    font-family: 'Damion', cursive;
+    font-family:$tipografia-album1;
     font-size: 1.5em;
     border: none;
 }
 .ep-style h5{
-    font-family: 'Damion', cursive;
+    font-family:$tipografia-album1;
     font-size:2em;
 }
 .ep-style a{
-    font-family: 'Special Elite', cursive;
+    font-family: $tipografia-album2;
     font-size: 1.3em;
 }
 

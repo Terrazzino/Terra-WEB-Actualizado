@@ -1,3 +1,5 @@
+$tipografia_anchor:'Yanone Kaffeesatz', sans-serif;
+
 .logo{
     width: 150px;
     height: auto;
@@ -11,7 +13,7 @@
     height: auto;
     div{
         a{
-            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-family: $tipografia_anchor;
             color: #fff;
             font-size: 1.8em;
             padding: 0;
@@ -44,7 +46,7 @@
             animation-fill-mode: forwards;
             li{
                 a{
-                    font-family: 'Yanone Kaffeesatz', sans-serif;
+                    font-family: $tipografia_anchor;
                     animation-name: letra-aparece;
                     animation-duration: 0.8s;
                     animation-fill-mode: forwards;

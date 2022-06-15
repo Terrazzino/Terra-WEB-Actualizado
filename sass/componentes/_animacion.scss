@@ -1,3 +1,4 @@
+$tipografia-bienvenida:'Cinzel', serif;
 
 .presentacion-div{
     display: flex;
@@ -17,7 +18,7 @@
         top: 30%;
         overflow: hidden;
         .bienvenida-texto{
-            font-family: 'Cinzel', serif;
+            font-family:$tipografia-bienvenida;
             font-size:5em; 
             color: #ffffff00;
             animation: aparece-bienvenida;
@@ -25,7 +26,7 @@
             animation-fill-mode: forwards;
         }
         .bienvenida-nombre{
-            font-family: 'Cinzel', serif;
+            font-family:$tipografia-bienvenida;
             font-size:10em;
             color: #ffffff00;
             animation: aparece-nombre;

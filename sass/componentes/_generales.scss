@@ -1,4 +1,5 @@
 $tipografia-titulos:'Special Elite', cursive;
+$tipografia-parrafos:'Poiret One', cursive;
 
 body{
     div{
@@ -16,10 +17,10 @@ section h5, aside h4, aside footer{
     font-family: $tipografia-titulos;
 }
 section p{
-    font-family: 'Poiret One', cursive;
+    font-family:$tipografia-parrafos;
 }
 aside p{
-    font-family: 'Poiret One', cursive;
+    font-family:$tipografia-parrafos;
     color: #000000;
 }
 
