@@ -1,11 +1,11 @@
-$tipografia-titulos:'Special Elite', cursive;
-$tipografia-parrafos:'Poiret One', cursive;
+@import "./variables";
+@import "./maps";
 
 body{
     div{
         position: relative;
         h1{
-            font-family: 'Yanone Kaffeesatz', sans-serif;
+            font-family: $tipografia-4;
             font-weight: bold;
             margin-top: 0.5em;
             padding: 5px;
@@ -14,14 +14,14 @@ body{
     }
 }
 section h5, aside h4, aside footer{
-    font-family: $tipografia-titulos;
+    font-family: $tipografia-2;
 }
 section p{
-    font-family:$tipografia-parrafos;
+    font-family:$tipografia-5;
 }
 aside p{
-    font-family:$tipografia-parrafos;
-    color: #000000;
+    font-family:$tipografia-5;
+    color: map-get($colores,negro);
 }
 
 footer a img{

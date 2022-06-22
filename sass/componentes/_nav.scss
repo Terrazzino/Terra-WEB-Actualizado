@@ -1,4 +1,7 @@
-$tipografia_anchor:'Yanone Kaffeesatz', sans-serif;
+@import "./variables";
+@import "./mixin";
+@import "./maps";
+
 
 .logo{
     width: 150px;
@@ -13,16 +16,16 @@ $tipografia_anchor:'Yanone Kaffeesatz', sans-serif;
     height: auto;
     div{
         a{
-            font-family: $tipografia_anchor;
-            color: #fff;
+            font-family: $tipografia-4;
+            color: map-get($colores,blanco);
             font-size: 1.8em;
             padding: 0;
             margin: 0;
             transition: .7s;
         }
         a:hover{
-            text-shadow: 0 0 70px #914600;
-            color: #886e55;
+            text-shadow: 0 0 70px map-get($colores,shadow_1);
+            color: map-get($colores,light_brown);
             transform: scale(1.5);
         }
     }
@@ -46,7 +49,7 @@ $tipografia_anchor:'Yanone Kaffeesatz', sans-serif;
             animation-fill-mode: forwards;
             li{
                 a{
-                    font-family: $tipografia_anchor;
+                    font-family: $tipografia-4;
                     animation-name: letra-aparece;
                     animation-duration: 0.8s;
                     animation-fill-mode: forwards;
@@ -58,19 +61,19 @@ $tipografia_anchor:'Yanone Kaffeesatz', sans-serif;
 
 @keyframes letra-aparece {
     0%{
-        color: rgba(255, 255, 255, 0);
-        text-shadow: 0 0 10px #dbc02700;
+        color: map-get($colores,transparente);
+        text-shadow: 0 0 10px map-get($colores,transparente);
     }
     50%{
-        color: rgba(255, 255, 255, 0);
+        color: map-get($colores,transparente);
     }
     70%{
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 10px #dbc027;
+        color: map-get($colores,blanco);
+        text-shadow: 0 0 10px map-get($colores,shadow_2);
     }
     100%{
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 10px #dbc02700;
+        color: map-get($colores,blanco);
+        text-shadow: 0 0 10px map-get($colores,transparente);
     }
 }
 
@@ -80,19 +83,7 @@ $tipografia_anchor:'Yanone Kaffeesatz', sans-serif;
         width: 120px;
         height: auto;
     }
-    .submenu li a{
-        font-size: 1.5em;
-    }
-
-    .menu-oficial{
-        display: none;
-    }
-    .menu-secundario{
-        display: flex;
-        flex-direction: column;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-    }
+    @include menu_responsive;
     @keyframes aparece-submenu {
         0%{
             height: 0;
@@ -103,18 +94,7 @@ $tipografia_anchor:'Yanone Kaffeesatz', sans-serif;
     }
 }
 @media only screen and (min-width:445px) and (max-width:600px){
-    .menu-oficial{
-        display: none;
-    }
-    .submenu li a{
-        font-size: 1.5em;
-    }
-    .menu-secundario{
-        display: flex;
-        flex-direction: column;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-    }
+    @include menu_responsive;
     @keyframes aparece-submenu {
         0%{
             height: 0;
@@ -125,18 +105,7 @@ $tipografia_anchor:'Yanone Kaffeesatz', sans-serif;
     }
 }
 @media only screen and (min-width:600px) and (max-width:845px){
-    .menu-oficial{
-        display: none;
-    }
-    .submenu li a{
-        font-size: 1.5em;
-    }
-    .menu-secundario{
-        display: flex;
-        flex-direction: column;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
-    }
+    @include menu_responsive;
     @keyframes aparece-submenu {
         0%{
             height: 0;

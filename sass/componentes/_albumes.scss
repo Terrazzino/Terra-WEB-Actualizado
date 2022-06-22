@@ -1,49 +1,49 @@
-$tipografia-album1:'Damion', cursive;
-$tipografia-album2:'Special Elite', cursive;
+@import "./variables";
+@import "./maps";
 
 #seccion-album a{
-    background-color: #000000;
+    background-color: map-get($colores,negro);
     border: none;
-    color: #fff;
+    color: map-get($colores,blanco);
     transition:.5s;
-    font-family:$tipografia-album1;
+    font-family:$tipografia-1;
     font-size: 1.5em;
 }
 #seccion-album a:hover{
-    color: rgb(199, 212, 226);
-    box-shadow: 0 0 15px #914600;
+    color:map-get($colores,shadow_1);
+    box-shadow: 0 0 15px map-get($colores,shadow_1);
 }
 
 .btn-group a{
-    font-family:$tipografia-album1;
+    font-family:$tipografia-1;
     font-size: 1.5em;
     border: none;
 }
 .ep-style h5{
-    font-family:$tipografia-album1;
+    font-family:$tipografia-1;
     font-size:2em;
 }
 .ep-style a{
-    font-family: $tipografia-album2;
+    font-family: $tipografia-2;
     font-size: 1.3em;
 }
 
 
 @media only screen and (max-width:445px){
     iframe{
-        width: 200px;
-        height: 200px;
+        width: $ancho/3;
+        height: $alto/3;
     }
 }
 @media only screen and (min-width:445px) and (max-width:600px){
     iframe{
-        width: 300px;
-        height: 315px;
+        width: $ancho/2;
+        height: $alto/3;
     }
 }
 @media only screen and (min-width:600px) and (max-width:845px){
     iframe{
-        width: 360px;
-        height: 315px;
+        width: $ancho/1.5;
+        height: $alto/2;
     }
 }

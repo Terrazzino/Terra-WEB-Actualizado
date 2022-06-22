@@ -15,11 +15,11 @@ section h5, aside h4, aside footer {
 }
 
 section p {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
 }
 
 aside p {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   color: #000000;
 }
 
@@ -39,13 +39,13 @@ footer a img:hover {
 }
 
 .carousel-item div h3 {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: bold;
   font-size: 10em;
 }
 
 .carousel-item p {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5em;
 }
 
@@ -114,7 +114,7 @@ footer a img:hover {
 }
 
 .menu-oficial div a {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   color: #fff;
   font-size: 1.8em;
   padding: 0;
@@ -156,7 +156,7 @@ footer a img:hover {
 }
 
 .menu-secundario .nav-item .submenu li a {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   -webkit-animation-name: letra-aparece;
           animation-name: letra-aparece;
   -webkit-animation-duration: 0.8s;
@@ -342,7 +342,7 @@ footer a img:hover {
 }
 
 .presentacion-div .contenedor-bienvenida .bienvenida-texto {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 5em;
   color: #ffffff00;
   -webkit-animation: aparece-bienvenida;
@@ -354,7 +354,7 @@ footer a img:hover {
 }
 
 .presentacion-div .contenedor-bienvenida .bienvenida-nombre {
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   font-size: 10em;
   color: #ffffff00;
   -webkit-animation: aparece-nombre;
@@ -887,22 +887,22 @@ footer a img:hover {
 }
 
 label {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   color: #000000;
   font-weight: bold;
 }
 
 input, textarea {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
 }
 
 legend {
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   font-size: 2.5em;
 }
 
 button {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   color: #000000;
   -webkit-transition: .8s;
   transition: .8s;
@@ -919,7 +919,7 @@ button:hover {
   color: #fff;
   -webkit-transition: .5s;
   transition: .5s;
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   font-size: 1.5em;
 }
 
@@ -930,18 +930,18 @@ button:hover {
 }
 
 .btn-group a {
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   font-size: 1.5em;
   border: none;
 }
 
 .ep-style h5 {
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   font-size: 2em;
 }
 
 .ep-style a {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   font-size: 1.3em;
 }
 

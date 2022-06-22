@@ -1,7 +1,7 @@
 body div {
   position: relative; }
   body div h1 {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
     font-weight: bold;
     margin-top: 0.5em;
     padding: 5px;
@@ -11,11 +11,11 @@ section h5, aside h4, aside footer {
   font-family: "Special Elite", cursive; }
 
 section p {
-  font-family: 'Poiret One', cursive; }
+  font-family: "Poiret One", cursive; }
 
 aside p {
-  font-family: 'Poiret One', cursive;
-  color: #000000; }
+  font-family: "Poiret One", cursive;
+  color: #000; }
 
 footer a img {
   opacity: 0.18;
@@ -29,12 +29,12 @@ footer a img:hover {
   height: auto; }
 
 .carousel-item div h3 {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: bold;
   font-size: 10em; }
 
 .carousel-item p {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5em; }
   .carousel-item p kbd {
     background-color: #272727; }
@@ -81,7 +81,7 @@ footer a img:hover {
   width: 100vw;
   height: auto; }
   .menu-oficial div a {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: "Yanone Kaffeesatz", sans-serif;
     color: #fff;
     font-size: 1.8em;
     padding: 0;
@@ -103,32 +103,32 @@ footer a img:hover {
     animation-duration: 0.5s;
     animation-fill-mode: forwards; }
     .menu-secundario .nav-item .submenu li a {
-      font-family: 'Yanone Kaffeesatz', sans-serif;
+      font-family: "Yanone Kaffeesatz", sans-serif;
       animation-name: letra-aparece;
       animation-duration: 0.8s;
       animation-fill-mode: forwards; }
 
 @keyframes letra-aparece {
   0% {
-    color: rgba(255, 255, 255, 0);
-    text-shadow: 0 0 10px #dbc02700; }
+    color: #00000000;
+    text-shadow: 0 0 10px #00000000; }
   50% {
-    color: rgba(255, 255, 255, 0); }
+    color: #00000000; }
   70% {
-    color: white;
+    color: #fff;
     text-shadow: 0 0 10px #dbc027; }
   100% {
-    color: white;
-    text-shadow: 0 0 10px #dbc02700; } }
+    color: #fff;
+    text-shadow: 0 0 10px #00000000; } }
 
 @media only screen and (max-width: 445px) {
   .logo {
     width: 120px;
     height: auto; }
-  .submenu li a {
-    font-size: 1.5em; }
   .menu-oficial {
     display: none; }
+  .submenu li a {
+    font-size: 1.5em; }
   .menu-secundario {
     display: flex;
     flex-direction: column;
@@ -172,34 +172,51 @@ footer a img:hover {
     100% {
       height: 11em; } } }
 
-.presentacion-div {
-  display: flex;
-  justify-content: center;
+.transicion, .presentacion-div {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100vw;
   z-index: 5000;
-  animation-name: bienvenido;
-  animation-duration: 4s;
+  animation-name: transition;
+  animation-duration: 2s;
   animation-fill-mode: forwards; }
+
+@keyframes transition {
+  0% {
+    background-color: #fff; }
+  60% {
+    background-color: #fff; }
+  99% {
+    height: 100%;
+    width: 100vw;
+    background-color: #00000000; }
+  100% {
+    height: 0%;
+    width: 0vw; } }
+
+.presentacion-div {
+  display: flex;
+  justify-content: center;
+  animation-name: bienvenido;
+  animation-duration: 4s; }
   .presentacion-div .contenedor-bienvenida {
     text-align: center;
     position: relative;
     top: 30%;
     overflow: hidden; }
     .presentacion-div .contenedor-bienvenida .bienvenida-texto {
-      font-family: 'Cinzel', serif;
+      font-family: "Cinzel", serif;
       font-size: 5em;
-      color: #ffffff00;
+      color: #00000000;
       animation: aparece-bienvenida;
       animation-duration: 3s;
       animation-fill-mode: forwards; }
     .presentacion-div .contenedor-bienvenida .bienvenida-nombre {
-      font-family: 'Cinzel', serif;
+      font-family: "Cinzel", serif;
       font-size: 10em;
-      color: #ffffff00;
+      color: #00000000;
       animation: aparece-nombre;
       animation-duration: 3s;
       animation-fill-mode: forwards; }
@@ -212,52 +229,28 @@ footer a img:hover {
   99% {
     height: 100%;
     width: 100vw;
-    background-color: #ffffff00; }
+    background-color: #00000000; }
   100% {
     height: 0%;
     width: 0vw; } }
 
 @keyframes aparece-bienvenida {
   0% {
-    color: #ffffff00; }
+    color: #00000000; }
   80% {
     color: #818181; }
   100% {
-    color: #ffffff00; } }
+    color: #00000000; } }
 
 @keyframes aparece-nombre {
   0% {
-    color: #ffffff00; }
+    color: #00000000; }
   50% {
-    color: #ffffff00; }
+    color: #00000000; }
   80% {
-    color: #000000; }
+    color: #000; }
   100% {
-    color: #ffffff00; } }
-
-.transicion {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100vw;
-  z-index: 5000;
-  animation-name: transition;
-  animation-duration: 1s;
-  animation-fill-mode: forwards; }
-
-@keyframes transition {
-  0% {
-    background-color: white; }
-  60% {
-    background-color: white; }
-  99% {
-    height: 100%;
-    width: 100vw;
-    background-color: #ffffff00; }
-  100% {
-    height: 0%;
-    width: 0vw; } }
+    color: #00000000; } }
 
 @media only screen and (max-width: 445px) {
   .presentacion-div .contenedor-bienvenida .bienvenida-texto {
@@ -290,7 +283,7 @@ footer a img:hover {
   filter: none;
   transform: scale(1.2);
   z-index: 100;
-  box-shadow: 0 0 20px #753e3e;
+  box-shadow: 0 0 20px #914600;
   border-radius: 0px; }
 
 .img1 {
@@ -459,48 +452,48 @@ footer a img:hover {
     width: 320px; } }
 
 label {
-  font-family: 'Poiret One', cursive;
-  color: #000000;
+  font-family: "Poiret One", cursive;
+  color: #000;
   font-weight: bold; }
 
 input, textarea {
-  font-family: 'Special Elite', cursive; }
+  font-family: "Special Elite", cursive; }
 
 legend {
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   font-size: 2.5em; }
 
 button {
-  font-family: 'Special Elite', cursive;
-  color: #000000;
+  font-family: "Special Elite", cursive;
+  color: #000;
   transition: .8s; }
 
 button:hover {
-  box-shadow: 4px 2px 5px #000000; }
+  box-shadow: 4px 2px 5px #000; }
 
 #seccion-album a {
-  background-color: #000000;
+  background-color: #000;
   border: none;
   color: #fff;
   transition: .5s;
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   font-size: 1.5em; }
 
 #seccion-album a:hover {
-  color: #c7d4e2;
+  color: #914600;
   box-shadow: 0 0 15px #914600; }
 
 .btn-group a {
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   font-size: 1.5em;
   border: none; }
 
 .ep-style h5 {
-  font-family: 'Damion', cursive;
+  font-family: "Damion", cursive;
   font-size: 2em; }
 
 .ep-style a {
-  font-family: 'Special Elite', cursive;
+  font-family: "Special Elite", cursive;
   font-size: 1.3em; }
 
 @media only screen and (max-width: 445px) {
@@ -511,9 +504,9 @@ button:hover {
 @media only screen and (min-width: 445px) and (max-width: 600px) {
   iframe {
     width: 300px;
-    height: 315px; } }
+    height: 200px; } }
 
 @media only screen and (min-width: 600px) and (max-width: 845px) {
   iframe {
-    width: 360px;
-    height: 315px; } }
+    width: 400px;
+    height: 300px; } }

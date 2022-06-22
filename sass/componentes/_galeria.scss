@@ -1,3 +1,5 @@
+@import "./maps";
+
 .grid-galeria {
     margin: auto;
     display: grid;
@@ -18,7 +20,7 @@
     filter: none;
     transform:scale(1.2);
     z-index: 100;
-    box-shadow: 0 0 20px #753e3e;
+    box-shadow: 0 0 20px map-get($colores,shadow_1);
     border-radius: 0px;
 }
 
