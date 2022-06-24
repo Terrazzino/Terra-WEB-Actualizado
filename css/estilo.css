@@ -7,7 +7,7 @@ body div {
     padding: 5px;
     font-size: 3em; }
 
-section h5, aside h4, aside footer, h2, h3 {
+section h5, aside h4, aside footer, h2, h3, .card-body strong {
   font-family: "Special Elite", cursive; }
 
 section p {
@@ -40,7 +40,7 @@ footer a img:hover {
     background-color: #272727; }
 
 @media only screen and (max-width: 445px) {
-  .carousel-item div h3 {
+  .carousel-item div strong {
     font-size: 1.5em; }
   p kbd {
     font-size: 0.4em; }
@@ -51,7 +51,7 @@ footer a img:hover {
     top: 0.9em; } }
 
 @media only screen and (min-width: 445px) and (max-width: 600px) {
-  .carousel-item div h3 {
+  .carousel-item div strong {
     font-size: 3em; }
   p kbd {
     font-size: 0.5em; }
@@ -59,7 +59,7 @@ footer a img:hover {
     display: none; } }
 
 @media only screen and (min-width: 600px) and (max-width: 845px) {
-  .carousel-item div h3 {
+  .carousel-item div strong {
     font-size: 4.2em; }
   p kbd {
     font-size: 0.7em; }
@@ -67,7 +67,7 @@ footer a img:hover {
     display: none; } }
 
 @media only screen and (min-width: 845px) and (max-width: 1165px) {
-  .carousel-item div h3 {
+  .carousel-item div strong {
     font-size: 5.2em; }
   p kbd {
     font-size: 0.9em; } }

@@ -2,7 +2,7 @@
 //Responsive para el Baner
 @mixin tamaño_letras_responsive ($h3, $p_kbd) {
     .carousel-item div {
-        h3 {
+        strong {
             font-size: $h3;
         }
     }
