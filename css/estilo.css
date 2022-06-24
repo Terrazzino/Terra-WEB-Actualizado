@@ -7,7 +7,7 @@ body div {
     padding: 5px;
     font-size: 3em; }
 
-section h5, aside h4, aside footer {
+section h5, aside h4, aside footer, h2, h3 {
   font-family: "Special Elite", cursive; }
 
 section p {
@@ -28,7 +28,7 @@ footer a img:hover {
   width: 100%;
   height: auto; }
 
-.carousel-item div h3 {
+.carousel-item div strong {
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: bold;
   font-size: 10em; }
@@ -74,7 +74,7 @@ footer a img:hover {
 
 .logo {
   width: 150px;
-  height: auto;
+  height: 48.97px;
   margin: auto; }
 
 .menu-oficial div a {
