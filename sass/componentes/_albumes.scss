@@ -1,6 +1,36 @@
 @import "./variables";
 @import "./maps";
 
+.menu-albumes{
+    a{
+        font-family:$tipografia-1;
+        font-size: 1.5em;
+    }
+    ul{
+        li{
+            a{
+                display: none;
+            }
+            ul{
+                display: none;
+            }
+        }
+    }
+}
+.menu-albumes:hover{
+    ul{
+        li{
+            a{
+                display: block;
+            }
+        }
+    }
+}
+
+.carta-album{
+    max-width: 50%;
+}
+
 #seccion-album a{
     background-color: map-get($colores,negro);
     border: none;
@@ -12,6 +42,13 @@
 #seccion-album a:hover{
     color:map-get($colores,shadow_1);
     box-shadow: 0 0 15px map-get($colores,shadow_1);
+    z-index: 1000;
+    transform: scale(1.05);
+}
+
+#seccion-album .new-single:hover{
+    color:map-get($colores,new_single_text);
+    box-shadow: 0 0 15px map-get($colores,new_single_box);
 }
 
 .btn-group a{
@@ -28,20 +65,34 @@
     font-size: 1.3em;
 }
 
+iframe{
+    margin-bottom: 10px;
+}
 
-@media only screen and (max-width:445px){
+
+@media only screen and (max-width:601px){
     iframe{
-        width: $ancho/3;
-        height: $alto/3;
+        width: $ancho/4;
+        height: $alto/4;
+    }
+    .carta-album{
+        max-width: 90%;
+    }
+    .portada-letra{
+        flex-direction: column;
+        align-items: center;
     }
 }
-@media only screen and (min-width:445px) and (max-width:600px){
+@media only screen and (min-width:601px) and (max-width:810px){
     iframe{
         width: $ancho/2;
         height: $alto/3;
     }
+    .carta-album{
+        max-width: 70%;
+    }
 }
-@media only screen and (min-width:600px) and (max-width:845px){
+@media only screen and (min-width:810px) and (max-width:1120px){
     iframe{
         width: $ancho/1.5;
         height: $alto/2;

@@ -17,8 +17,14 @@ aside p {
   font-family: "Poiret One", cursive;
   color: #000; }
 
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
 footer a img {
-  opacity: 0.18;
+  opacity: 0.60;
   transition: .8s; }
 
 footer a img:hover {
@@ -86,7 +92,7 @@ footer a img:hover {
   transition: .7s; }
 
 .menu-oficial div a:hover {
-  text-shadow: 0 0 70px #914600;
+  text-shadow: 0 0 70px #f7bd86;
   color: #886e55;
   transform: scale(1.5); }
 
@@ -276,7 +282,7 @@ footer a img:hover {
 
 .galeria-img {
   margin: auto;
-  width: 500px;
+  width: 450px;
   height: auto;
   filter: grayscale(70%) blur(1.5px);
   transition: 1s;
@@ -286,7 +292,7 @@ footer a img:hover {
   filter: none;
   transform: scale(1.2);
   z-index: 100;
-  box-shadow: 0 0 20px #914600;
+  box-shadow: 0 0 20px #f7bd86;
   border-radius: 0px; }
 
 .img1 {
@@ -474,6 +480,22 @@ button {
 button:hover {
   box-shadow: 4px 2px 5px #000; }
 
+.menu-albumes a {
+  font-family: "Damion", cursive;
+  font-size: 1.5em; }
+
+.menu-albumes ul li a {
+  display: none; }
+
+.menu-albumes ul li ul {
+  display: none; }
+
+.menu-albumes:hover ul li a {
+  display: block; }
+
+.carta-album {
+  max-width: 50%; }
+
 #seccion-album a {
   background-color: #000;
   border: none;
@@ -483,8 +505,14 @@ button:hover {
   font-size: 1.5em; }
 
 #seccion-album a:hover {
-  color: #914600;
-  box-shadow: 0 0 15px #914600; }
+  color: #f7bd86;
+  box-shadow: 0 0 15px #f7bd86;
+  z-index: 1000;
+  transform: scale(1.05); }
+
+#seccion-album .new-single:hover {
+  color: #98f574;
+  box-shadow: 0 0 15px #09e766; }
 
 .btn-group a {
   font-family: "Damion", cursive;
@@ -499,17 +527,27 @@ button:hover {
   font-family: "Special Elite", cursive;
   font-size: 1.3em; }
 
-@media only screen and (max-width: 445px) {
-  iframe {
-    width: 200px;
-    height: 200px; } }
+iframe {
+  margin-bottom: 10px; }
 
-@media only screen and (min-width: 445px) and (max-width: 600px) {
+@media only screen and (max-width: 601px) {
+  iframe {
+    width: 150px;
+    height: 150px; }
+  .carta-album {
+    max-width: 90%; }
+  .portada-letra {
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (min-width: 601px) and (max-width: 810px) {
   iframe {
     width: 300px;
-    height: 200px; } }
+    height: 200px; }
+  .carta-album {
+    max-width: 70%; } }
 
-@media only screen and (min-width: 600px) and (max-width: 845px) {
+@media only screen and (min-width: 810px) and (max-width: 1120px) {
   iframe {
     width: 400px;
     height: 300px; } }

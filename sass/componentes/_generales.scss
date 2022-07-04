@@ -24,8 +24,15 @@ aside p{
     color: map-get($colores,negro);
 }
 
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
 footer a img{
-    opacity: 0.18;
+    opacity: 0.60;
     transition: .8s;
 }
 footer a img:hover{
